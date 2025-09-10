@@ -1,0 +1,71 @@
+<!-- 
+Combinator selectors : 
+
+1. Descendant selectors : Take all the elements or any thing written in side like every p in every div in this example.
+eg:- div p{
+    property;
+}
+
+2. Child Combinator (>) : Take the all child element written in the parent. 
+eg:- div>p{
+    property;
+}
+
+3. Adjacent sibling selector (+) : Take the just next sibling of the element.
+eg:- h1+p{
+    property;
+}
+
+4. General Sibling Selector (~) : select all the sibling of the written element.
+eg:- h1 ~ p{
+    property;
+}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p{
+            background-color: red;
+        }
+
+        span p{
+            background-color: red;
+        } */
+
+        .new p{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <span>
+            <p>p5</p>
+            <p>p6p</p>
+            <p>pnkj</p>
+            <p>bkj</p>
+            <p>giuh</p>
+        </span>
+    </div>
+
+    <span>
+        1245
+        <p>23r</p>
+    </span>
+
+    <div class="new">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+</body>
+</html>
