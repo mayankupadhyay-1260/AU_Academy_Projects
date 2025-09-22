@@ -7,13 +7,15 @@
     <style>
         
         .container{
-            height: 200px;
-            width: 200px;
+            height: 600px;
+            width: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            /* overflow: scroll; */
             border: 2px solid red;
+            /* gap: 10px; */
         }
         p{
             display: inline-block;
@@ -21,19 +23,33 @@
             width: 33px;
             border: 2px solid black;
         }
+
+        @media only screen and (max-width:600px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                background-color: blue;
+            }
+            .container p {
+                background-color: green;
+                height: 200px;
+                width: 200px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        
+    
     </div>
 </body>
 </html>
