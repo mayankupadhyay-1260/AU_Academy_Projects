@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 10vh;
+    border: 2px solid black;
+    background-color: #34495E;
+
+    ul {
+        display: flex;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        list-style-type: none;
+
+        a {
+            border: 2px solid black;
+            color: white;
+            border-radius: 20px;
+            padding: 12px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blanchedalmond;
+            padding: 18px;
+            font-size: 20px;
+            background-color: darkcyan;
+        }
+    }
+}
+
+.mainbody {
+    height: 80vh;
+    border: 2px solid black;
+    background-color: #8B4513;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: row-reverse; */
+    align-items: flex-end;
+}
+.mainbody:hover {
+    animation: hoverbody 4s forwards;
+
+    .image {
+        animation: imagetransition 2s cubic-bezier(0.9,-0.32, 0.67, 0.88) 2.2s forwards;
+    }
+
+}
+
+
+.myid {
+    animation: dropid 3s forwards;
+
+    .container {
+        height: 400px;
+        width: 380px;
+        border: 2px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blanchedalmond;
+
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+
+        img {
+
+            height: 200px;
+            width: 180px;
+            border: 8px solid white;
+            border-radius: 50%;
+        }
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+}
+
+.myinfo {
+    font-size: larger;
+    height: 100%;
+    width: 400px;
+    animation: myintro 3s;
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+footer {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    span {
+        font-size: x-large;
+    }
+}
+
+
+@keyframes hoverbody {
+    from {
+        top: 20%;
+        background-image: url(../assets/Screenshot_23-9-2025_32927_rare-gallery.com.jpeg);
+        background-size: cover;
+    }
+
+    to {
+        bottom: 30%;
+        background-image: url(../assets/Screenshot_23-9-2025_32927_rare-gallery.com.jpeg);
+        background-size: cover;
+        color: blanchedalmond;
+    }
+}
+
+@keyframes imagetransition {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(80px);
+    }
+}
+
+@keyframes dropid {
+    from {
+        top: 10%;
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+
+    to {
+        top: 60%;
+        opacity: 100%;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes myintro {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
