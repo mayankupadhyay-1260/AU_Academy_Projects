@@ -1,0 +1,96 @@
+:root {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --accent: #7c3aed;
+    --muted: #94a3b8;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 12px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg), #071026 80%);
+    color: #e6eef8;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 720px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border-radius: var(--radius);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+
+h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.2px;
+}
+
+p.lead {
+    margin: 0 0 1.25rem 0;
+    color: var(--muted);
+    font-size: 0.95rem
+}
+
+
+form {
+    display: grid;
+    gap: 0.9rem
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem
+}
+
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.35rem
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+    background: var(--glass);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    color: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: box-shadow .15s, transform .08s;
+    resize: vertical;
+}

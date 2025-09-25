@@ -42,6 +42,9 @@ align-items: center;
   justify-content: center;
   margin: 40px;
   gap: 80px;
+  a{
+    text-decoration: none;
+  }
   a:hover{
     color: blanchedalmond;
       border: 2px solid white;

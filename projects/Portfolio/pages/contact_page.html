@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact_page.css">
+</head>
+<body>
+    <main class="card" role="main">
+<h1>Send a quick hello</h1>
+<p class="lead">Need a reply? Drop your details and your message — we’ll get back to you soon.</p>
+
+
+<form action="#" method="post" novalidate>
+<div class="row">
+<div>
+<label for="name">Full name</label>
+<input id="name" name="name" type="text" placeholder="Mayank Upadhyay" required autocomplete="name" />
+</div>
+
+
+<div>
+<label for="phone">Contact (phone)</label>
+<input id="phone" name="phone" type="tel" placeholder="+91 1122334455" pattern="[+0-9 ()-]{7,}" autocomplete="tel" />
+</div>
+</div>
+
+
+<div>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="email@gmail.com" required autocomplete="email" />
+</div>
+
+
+<div>
+<label for="message">Your query</label>
+<textarea id="message" name="message" placeholder="Tell us what you need..." required></textarea>
+<p class="note">Be as specific as you like — the more detail, the better the help.</p>
+</div>
+
+
+<div class="actions">
+<button type="submit">Send message</button>
+<button type="reset" class="secondary">Reset</button>
+</div>
+</form>
+</main>
+</body>
+</html>

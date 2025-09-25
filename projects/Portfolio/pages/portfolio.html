@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="../styles/portfolio.css">
-    <title>Portfolio</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="portfolio.html">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://github.com/mayankupadhyay-1260">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/mayank-upadhyay-969731258/">Linkedin</a></li>
-        </ul>
-    </nav>
-    <section class="mainbody">
-        <div class="myinfo">
-            <h3>MAYANK UPADHYAY</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quas maiores nemo unde aspernatur minima rerum enim, ad ratione amet quae qui suscipit dignissimos quos, quo culpa eius maxime deserunt? Mollitia, maiores at? Modi tenetur explicabo tempora saepe quasi sequi iusto eveniet assumenda, excepturi distinctio? Unde inventore sequi dicta.</p>
-        </div>
-        <div class="myid">
-            <div class="container">
-                <div class="image"><img src="../assets/mypic.jpg" alt="myImage"></div>
-                <p class="name">Mayank Upadhyay</p>
-                <p>Engineer.. Maybe!!</p>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../pages/portfolio.html">Home</a></li>
+                    <li><a href="https://www.linkedin.com/in/mayank-upadhyay-969731258/">LinkedIn</a></li>
+                    <li><a href="https://github.com/mayankupadhyay-1260">Github</a></li>
+                    <li><a href="#about-myself">About</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <div class="intro-text">
+                <h1>Hello Homosapiens,</h1>
+                <h2>My name is <span class="highlight">MAYANK UPADHYAY</span>.</h2>
+                <p>I love to <span class="highlight">Think</span>, <span class="highlight">Create</span> and <span
+                        class="highlight">Manage</span> — Projects and Opportunities.</p>
+                <p>I love to find solutions for general problems, deep dive into business concepts and innovate them to
+                    a better level.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">View Projects</a>
+                    <a href="#" class="btn">View Work with me</a>
+                </div>
+            </div>
+            <div class="intro-icon">
+                <img src="../assets/mypic.jpg" alt="Profile Icon">
             </div>
         </section>
+
+        <section class="about-me" id="about-myself">
+            <h2>About Me</h2>
+            <p>I am a full stack developer who believes in innovating real-time problems....</p>
+            <div class="skills">
+                <span class="skill">React</span>
+                <span class="skill">Tailwind</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">SQL</span>
+            </div>
+
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>This is a brief description of project one. It showcases my skills in web development and design.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>This is a brief description of project two. It highlights my ability to create user-friendly
+                        interfaces.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Three</h3>
+                    <p>This is a brief description of project three. It demonstrates my expertise in backend development
+                        and database management.</p>
+                </div>
+            </div>
+        </section>
+
+
         <footer>
-            <span>MY Portfolio</span>
-            <p>@copyright 2025</p>
+            <p>&copy; 2025 Mayank Upadhyay. </p>
         </footer>
-    </body>
-    </html>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+    </script>
+</body>
+
+</html>
